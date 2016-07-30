@@ -67,7 +67,7 @@ the software part is managed by `VerMS` API.
 
 # Data Relation
 
-![SQL data module](./screenshot/sql-data.svg)
+![SQL data module](./screenshot/sql-data.png)
 
 # Lisence
 
