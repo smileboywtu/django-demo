@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% load staticfiles %}
+<!-- add bootstrap3 css style -->
+<link href="{% static 'jslib/bootstrap3/css/bootstrap.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+	{% block content %}{% endblock %}
+
+	<!-- add jquery  (necessary for Bootstrap's JavaScript plugins) -->
+	<script type="text/javascript" src="{% static 'jslib/jquery/jquery.min.js' %}"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script type="text/javascript" src="{% static 'jslib/bootstrap3/js/bootstrap.min.js' %}"></script>
+    <!-- a way to add extra js -->
+    {% block extra_javascript %}{% endblock %}
+</body>
+
+</html>
